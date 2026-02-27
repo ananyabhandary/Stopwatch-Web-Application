@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Professional Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="stopwatch-card">
+        <h1>⏱ Stopwatch</h1>
+
+        <div class="time-display" id="display">
+            00:00:00.00
+        </div>
+
+        <div class="controls">
+            <button id="startBtn" onclick="start()">Start</button>
+            <button id="pauseBtn" onclick="pause()" disabled>Pause</button>
+            <button id="resetBtn" onclick="reset()" disabled>Reset</button>
+            <button id="lapBtn" onclick="lap()" disabled>Lap</button>
+        </div>
+
+        <div class="laps-container">
+            <ul id="laps"></ul>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
